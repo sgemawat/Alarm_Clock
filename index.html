@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8"> <!-- Character encoding -->
+    <title>Alarm Clock</title> <!-- Page title -->
+    <link rel="stylesheet" href="style.css"> <!-- External stylesheet link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport settings -->
+</head>
+<body>
+    <div class="wrapper"> <!-- Main content wrapper -->
+        <img src="./clock.svg" alt="clock"> <!-- Clock image with alternative text -->
+        <h1>00:00:00 PM</h1> <!-- Display of current time -->
+        <div class="content"> <!-- Content container -->
+            <div class="column">
+                <select>
+                    <option value="Hour" selected disabled hidden>Hour</option> <!-- Dropdown for selecting the hour -->
+                </select>
+            </div>
+            <div class="column">
+                <select>
+                    <option value="Minute" selected disabled hidden>Minute</option> <!-- Dropdown for selecting the minute -->
+                </select>
+            </div>
+            <div class="column">
+                <select>
+                    <option value="AM/PM" selected disabled hidden>AM/PM</option> <!-- Dropdown for selecting AM/PM -->
+                </select>
+            </div>
+        </div>
+        <button>Set Alarm</button> <!-- Button to set the alarm -->
+    </div>
+    <audio src="./ringtone.mp3"></audio> <!-- Audio element for the alarm ringtone -->
+    <script src="script.js"></script> <!-- JavaScript script file -->
+</body>
+</html>
